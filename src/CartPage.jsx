@@ -16,8 +16,8 @@ const CartPage = () => {
         <>
             <div className='w-4/5 mr-auto ml-auto'>
 
-                <div className='flex justify-between gap-3'>
-                    <div className='w-2/4 p-2'>
+                <div className='flex justify-between gap-3 flex-col sm:flex-row'>
+                    <div className='sm:w-2/4 w-full   p-2'>
                         <h1 className='text-lg'>Your items</h1>
                         {cartItems.map((product) => (
                             <div key={product.id}>
@@ -59,7 +59,7 @@ const CartPage = () => {
                                 </div>
                         ))}
                     </div>
-                    <div className='w-2/4  p-2'>
+                    <div className='sm:w-2/4 w-full p-2'>
                     <h1 className='text-lg'>Summary</h1>
                     <div className='mt-4 bg-gray-300 p-4'>
                         <h1 className='text-lg text'>Order Total</h1>
